@@ -28,3 +28,20 @@ type User = {
     "bs": String
   }
 }
+
+type Result = {
+  pageid: String,
+  title: String,
+  extract: String,
+  thumbnail?: {
+    source: String,
+    width: number,
+    height: number
+  }
+}
+
+type SearchResult = {
+  query?: {
+    pages?: Result[]
+  }
+}
