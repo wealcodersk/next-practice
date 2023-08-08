@@ -1,3 +1,4 @@
+import Posts from "./components/Posts";
 import ProfilePic from "./components/ProfilePic";
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
         Hello and welcome 👋
         <span className="whitespace-nowrap">I am <span className="font-bold">Jahid</span></span>
       </p>
-      
+      <Posts />
     </main>
   )
 }

@@ -1,40 +1,40 @@
 type Post = {
-  "userId": Number,
-  "id": Number,
-  "title": String,
-  "body": String
+  "userId": number,
+  "id": number,
+  "title": string,
+  "body": string
 }
 
 type User = {
-  "id": Number,
-  "name": String,
-  "username": String,
-  "email": String,
+  "id": number,
+  "name": string,
+  "username": string,
+  "email": string,
   "address": {
-    "street": String,
-    "suite": String,
-    "city": String,
-    "zipcode": String,
+    "street": string,
+    "suite": string,
+    "city": string,
+    "zipcode": string,
     "geo": {
-      "lat": String,
-      "lng": String
+      "lat": string,
+      "lng": string
     }
   },
-  "phone": String,
-  "website": String,
+  "phone": string,
+  "website": string,
   "company": {
-    "name": String,
-    "catchPhrase": String,
-    "bs": String
+    "name": string,
+    "catchPhrase": string,
+    "bs": string
   }
 }
 
 type Result = {
-  pageid: String,
-  title: String,
-  extract: String,
+  pageid: string,
+  title: string,
+  extract: string,
   thumbnail?: {
-    source: String,
+    source: string,
     width: number,
     height: number
   }
@@ -44,4 +44,10 @@ type SearchResult = {
   query?: {
     pages?: Result[]
   }
+}
+
+type BlogPost = {
+  id: string,
+  title: string,
+  date: string
 }
